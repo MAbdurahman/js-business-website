@@ -80,20 +80,21 @@ html {
 }
 
 .heading-1 {
-  animation: animateHeading 12s 3s infinite;
+  animation: animateHeading 20s 5s infinite;
 }
 
 .heading-2 {
-  animation: animateHeading 12s 6s infinite;
+  animation: animateHeading 20s 10s infinite;
 }
 
 .heading-3 {
-  animation: animateHeading 12s 9s infinite;
+  animation: animateHeading 20s 15s infinite;
 }
 
 .heading-4 {
-  animation: animateHeading 12s 12s infinite;
+  animation: animateHeading 20s 20s infinite;
 }
+
 
 .banner-paragraph {
   font-size: 4rem;
@@ -104,7 +105,7 @@ html {
   width: 30%;
   margin: 0 auto 6rem auto;
   padding: 1rem 0;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   box-shadow: 1rem 1rem 5rem rgba(0, 0, 0, 0.5);
   opacity: 0;
   visibility: hidden;
