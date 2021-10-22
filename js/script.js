@@ -20,15 +20,16 @@ $(document).ready(function () {
 
 	const playPause = () => {
 		if (video.paused) {
+			/* btn.classList.remove('far-play-circle'); */
 			video.play();
-			btn.className = 'fa-pause-circle';
+			btn.className = 'far fa-pause-circle';
 			/* btn.classList.add('fa-pause-circle'); */
 			video.style.opacity = '.7';
-		} else {
+		}  else if (!video.paused) {
 			/* btn.classList.remove('fa-pause-circle'); */
 			video.pause();
-			btn.className = 'fa-play-circle';
-			/* btn.classList.add('fa-play-circle'); */
+			btn.className = 'far fa-play-circle';
+			/* btn.classList.add('far fa-play-circle'); */
 			video.style.opacity = '.3';
 		}
 	};
