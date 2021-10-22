@@ -20,17 +20,16 @@ $(document).ready(function () {
 
 	const playPause = () => {
 		if (video.paused) {
-			/* btn.classList.remove('far-play-circle'); */
+		
 			video.play();
-			btn.className = 'far fa-pause-circle';
-			/* btn.classList.add('fa-pause-circle'); */
-			video.style.opacity = '.7';
+			btn.className = 'fas fa-pause-circle';
+			video.style.opacity = '.8';
+
 		}  else if (!video.paused) {
-			/* btn.classList.remove('fa-pause-circle'); */
+		
 			video.pause();
-			btn.className = 'far fa-play-circle';
-			/* btn.classList.add('far fa-play-circle'); */
-			video.style.opacity = '.3';
+			btn.className = 'fas fa-play-circle';
+			video.style.opacity = '.5';
 		}
 	};
 
@@ -39,7 +38,7 @@ $(document).ready(function () {
 	});
 
 	video.addEventListener('timeupdate', () => {
-		// console.log(video.currentTime, video.duration);
+	
 		const barWidth = video.currentTime / video.duration;
 		bar.style.width = `${barWidth * 100}%`;
 		if (video.ended) {

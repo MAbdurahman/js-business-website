@@ -189,21 +189,20 @@ html {
 }
 
 .heading-1 {
-  animation: animateHeading 20s 5s infinite;
+  animation: animateHeading 12s 3s infinite;
 }
 
 .heading-2 {
-  animation: animateHeading 20s 10s infinite;
+  animation: animateHeading 12s 6s infinite;
 }
 
 .heading-3 {
-  animation: animateHeading 20s 15s infinite;
+  animation: animateHeading 12s 9s infinite;
 }
 
 .heading-4 {
-  animation: animateHeading 20s 20s infinite;
+  animation: animateHeading 12s 12s infinite;
 }
-
 
 .banner-paragraph {
   font-size: 4rem;
@@ -303,7 +302,7 @@ html {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.3;
+  opacity: 0.9;
   transition: opacity 0.3s;
 }
 
@@ -342,8 +341,13 @@ html {
   cursor: pointer;
 }
 
-.buttons .fa-play-circle,
-.buttons .fa-pause-circle {
+.buttons i {
+  width: 3rem;
+  height: 3rem;
+  font-size: 2.8rem;
+  color: #fff;
+}
+#fa-play-circle {
   width: 3rem;
   height: 3rem;
   font-size: 2.8rem;
