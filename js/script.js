@@ -1,6 +1,5 @@
 /*-----Javascript for js-business-website */
 $(document).ready(function () {
-	
 	/*=============================================
             navbar
 ================================================*/
@@ -16,17 +15,20 @@ $(document).ready(function () {
             section 2 video
 ================================================*/
 	const video = document.querySelector('.video');
-	const btn = document.querySelector('.buttons button i');
+	const btn = document.querySelector('#fa-play-circle');
 	const bar = document.querySelector('.video-bar');
 
 	const playPause = () => {
 		if (video.paused) {
 			video.play();
-			btn.className = 'far fa-pause-circle';
+			btn.className = 'fa-pause-circle';
+			/* btn.classList.add('fa-pause-circle'); */
 			video.style.opacity = '.7';
 		} else {
+			/* btn.classList.remove('fa-pause-circle'); */
 			video.pause();
-			btn.className = 'far fa-play-circle';
+			btn.className = 'fa-play-circle';
+			/* btn.classList.add('fa-play-circle'); */
 			video.style.opacity = '.3';
 		}
 	};
@@ -36,11 +38,11 @@ $(document).ready(function () {
 	});
 
 	video.addEventListener('timeupdate', () => {
-		console.log(video.currentTime, video.duration);
+		// console.log(video.currentTime, video.duration);
 		const barWidth = video.currentTime / video.duration;
 		bar.style.width = `${barWidth * 100}%`;
 		if (video.ended) {
-			btn.className = 'far fa-play-circle';
+			btn.className = 'fa-play-circle';
 			video.style.opacity = '.3';
 		}
 	});
